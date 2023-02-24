@@ -5,8 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+
+        table {
+            border-collapse:collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th {
+            background-color: rgb(114, 111, 111);
+            color: white;
+        }
+
+        .cor {
+            background-color: rgb(104, 102, 102);
+            color: white;
+            text-align: center;
+        }
+
+        .espaço {
+            text-align: center;
+            width: 50px;
+        }
+    </style>
 </head>
 <body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" colspan="2" scope="colgroup">Área</th>
+                <th colspan="1" rowspan="2" scope="colgroup">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="colgroup">Média</th>
+            </tr>
+            <tr>
+                <th scope="colgroup">Nota 1</th>
+                <th scope="colgroup">Nota 2</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" style="background-color: white; color: black;" scope="rowgroup">Exatas</th>
+                <td colspan="2" scope="rowgroup">Matemática</td>
+                <td class="espaço">0.0</td>
+                <td class="espaço">0.0</td>
+                <td class="espaço">0.0</td>
+            </tr> 
+                <tr>
+                    <td colspan="2" scope="rowgroup">Fisíca</td>
+                    <td class="espaço">0.0</td>
+                    <td class="espaço">0.0</td>
+                    <td class="espaço">0.0</td>
+                </tr>
+                <tr>
+                    <td colspan="2" sscope="rowgroup">Química</td>
+                    <td class="espaço">0.0</td>
+                    <td class="espaço">0.0</td>
+                    <td class="espaço">0.0</td>
+                </tr>
+                <tr>
+                    <td colspan="2"sscope="rowgroup" >Biologia</td>
+                    <td class="espaço">0.0</td>
+                    <td class="espaço">0.0</td>
+                    <td class="espaço">0.0</td>
+                </tr>
+            <tr>
+                <th colspan="5"style="text-align: left;" scope="col">Média de Exatas</th>
+                <td class="cor" class="espaço">0.0</td>
+            </tr>
+            <tr>
+            <th colspan="2" rowspan="2" style="background-color: white; color: black;" scope="rowgroup">Humanas</th>
+            <td colspan="1"sscope="rowgroup" >Hístoria</td>
+            <td class="espaço">0.0</td>
+            <td class="espaço">0.0</td>
+            <td class="espaço">0.0</td>
+            </tr>
+            <tr>
+                <td colspan="1"sscope="rowgroup" >Geografia</td>
+                <td class="espaço">0.0</td>
+                <td class="espaço">0.0</td>
+                <td class="espaço">0.0</td>
+            </tr>
+            <tr>
+                <th colspan="5" style="text-align: left;" scope="col">Média de Humanas</th>
+                <td class="cor">0.0</td>
+            </tr>
+        </tbody>
+    </table>
     
 </body>
 </html>
